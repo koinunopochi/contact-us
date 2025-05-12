@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+/* カード表示用アニメーション */
+@keyframes gentle-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* ほんの少し下から */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* アニメーションを適用するクラス */
+.animate-gentle-fade-in-up {
+  animation: gentle-fade-in-up 0.6s ease-out forwards; /* 速度(0.6s)やイージング(ease-out)を調整 */
+}
+
+/* (オプション) body などにデフォルトの背景色やフォントを設定するとより安定します */
+body {
+  background-color: rgb(249 250 251);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
