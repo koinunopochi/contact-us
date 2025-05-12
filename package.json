@@ -10,7 +10,6 @@
     "serve": "vite preview",
     "deploy": "npm run build && wrangler pages deploy dist"
   },
-  "license": "MIT",
   "devDependencies": {
     "typescript": "^5.7.2",
     "vite": "^6.0.0",

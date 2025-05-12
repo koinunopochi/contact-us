@@ -1,34 +1,50 @@
-## Usage
+# Contact Us Page
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+SolidJSとTailwindCSSを使用したシンプルなコンタクトページです。
+自分用ですが、適当に改変して使って良いです。
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+以下にデプロイしています。
+https://contact.lynxes.org/
+
+## 概要
+
+- SolidJSの学習と実践
+- クラウドフレアワーカーズへのデプロイ実験
+- シンプルなコンタクトページの実装
+
+## 技術スタック
+
+- [SolidJS](https://www.solidjs.com/) - フロントエンドフレームワーク
+- [TailwindCSS](https://tailwindcss.com/) - スタイリング
+- [Cloudflare Pages](https://pages.cloudflare.com/) - ホスティング
+
+## 開発環境のセットアップ
 
 ```bash
-$ npm install # or pnpm install or yarn install
+# 依存関係のインストール
+npm install
+
+# 開発サーバーの起動
+npm run dev
+
+# ビルド
+npm run build
+
+# プレビュー
+npm run serve
 ```
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+## デプロイ
 
-## Available Scripts
+このプロジェクトは[Cloudflare Pages](https://pages.cloudflare.com/)でデプロイされています。
 
-In the project directory, you can run:
+デプロイ方法：
+```bash
+npm run deploy
+```
 
-### `npm run dev` or `npm start`
+## 今後の展望
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- 他のプロジェクトへの統合を検討中
+- [Cloudflare Workers](https://workers.cloudflare.com/)への移行を検討中（なんか推奨っぽいので）
 
-The page will reload if you make edits.<br>
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
